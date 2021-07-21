@@ -1,0 +1,21 @@
+### rktmpc ###
+
+An MPC-type program (as in a CLI for MPD).
+Not meant to be any sort of serious project.
+Mostly an example for https://github.com/Phate6660/racket-mpdclient
+Note: The above lib must be installed for this work, for... obvious reasons.
+
+$ racket main.rkt --help
+rktmpc [ <option> ... ]
+ where <option> is one of
+  -p, --play : Play MPD.
+  -P, --pause : Pause MPD.
+  -s <cmd>, --seek <cmd> : Controls various MPD playback functions.
+  --help, -h : Show this help
+  -- : Do not treat any remaining argument as a switch (at this level)
+ Multiple single-letter switches can be combined after one `-'; for
+  example: `-h-' is the same as `-h --'
+
+<cmd> =
+- next (for skipping to next song)
+- prev (for going back to the song before)
